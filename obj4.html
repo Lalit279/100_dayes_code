@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // Defining mrthod in javascript Object
+            // The example of defining method in object is given below
+            function emp(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+                this.changesalary=changesalary;
+                function changesalary(othersalary){
+                    this.salary=othersalary;
+                }
+            }
+            //e=new emp(103,"Laxmi Kumari",30000);
+            e=new emp(103,"Lalit Kumar",30000);
+            document.write(e.id+" "+e.name+" "+e.salary);
+            e.changesalary(45000);
+            document.write("<br>"+e.id+" "+e.name+" "+e.salary);         </script>
+    </head>
+</html>
